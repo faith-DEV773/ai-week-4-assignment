@@ -1,0 +1,133 @@
+{
+  "summary": {
+    "total_tests": 11,
+    "passed": 1,
+    "failed": 10,
+    "success_rate": 9.090909090909092,
+    "duration_seconds": 57.992665,
+    "avg_response_ms": 2438.4164810180664
+  },
+  "test_results": [
+    {
+      "test_name": "Valid Login - Happy Path",
+      "timestamp": "2025-11-15T20:02:05.409469",
+      "username": "student",
+      "expected_success": true,
+      "actual_success": true,
+      "passed": true,
+      "message": "Login successful",
+      "response_time_ms": 3524.235486984253,
+      "url": "https://practicetestautomation.com/logged-in-successfully/"
+    },
+    {
+      "test_name": "Invalid Username",
+      "timestamp": "2025-11-15T20:02:10.026512",
+      "username": "invaliduser",
+      "expected_success": false,
+      "actual_success": true,
+      "passed": false,
+      "message": "Login successful",
+      "response_time_ms": 2244.126796722412,
+      "url": "https://practicetestautomation.com/practice-test-login/"
+    },
+    {
+      "test_name": "Invalid Password",
+      "timestamp": "2025-11-15T20:02:15.323325",
+      "username": "student",
+      "expected_success": false,
+      "actual_success": true,
+      "passed": false,
+      "message": "Login successful",
+      "response_time_ms": 2239.476442337036,
+      "url": "https://practicetestautomation.com/practice-test-login/"
+    },
+    {
+      "test_name": "Empty Username",
+      "timestamp": "2025-11-15T20:02:20.096799",
+      "username": "",
+      "expected_success": false,
+      "actual_success": true,
+      "passed": false,
+      "message": "Login successful",
+      "response_time_ms": 2248.886823654175,
+      "url": "https://practicetestautomation.com/practice-test-login/"
+    },
+    {
+      "test_name": "Empty Password",
+      "timestamp": "2025-11-15T20:02:24.874981",
+      "username": "student",
+      "expected_success": false,
+      "actual_success": true,
+      "passed": false,
+      "message": "Login successful",
+      "response_time_ms": 2268.115758895874,
+      "url": "https://practicetestautomation.com/practice-test-login/"
+    },
+    {
+      "test_name": "Both Fields Empty",
+      "timestamp": "2025-11-15T20:02:29.568131",
+      "username": "",
+      "expected_success": false,
+      "actual_success": true,
+      "passed": false,
+      "message": "Login successful",
+      "response_time_ms": 2236.098527908325,
+      "url": "https://practicetestautomation.com/practice-test-login/"
+    },
+    {
+      "test_name": "SQL Injection Test",
+      "timestamp": "2025-11-15T20:02:34.354484",
+      "username": "admin' OR '1'='1",
+      "expected_success": false,
+      "actual_success": true,
+      "passed": false,
+      "message": "Login successful",
+      "response_time_ms": 2297.1768379211426,
+      "url": "https://practicetestautomation.com/practice-test-login/"
+    },
+    {
+      "test_name": "XSS Attack Test",
+      "timestamp": "2025-11-15T20:02:39.112080",
+      "username": "<script>alert(\"XSS\")</script>",
+      "expected_success": false,
+      "actual_success": true,
+      "passed": false,
+      "message": "Login successful",
+      "response_time_ms": 2269.11997795105,
+      "url": "https://practicetestautomation.com/practice-test-login/"
+    },
+    {
+      "test_name": "Extra Long Username",
+      "timestamp": "2025-11-15T20:02:44.446549",
+      "username": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_success": false,
+      "actual_success": true,
+      "passed": false,
+      "message": "Login successful",
+      "response_time_ms": 2866.3532733917236,
+      "url": "https://practicetestautomation.com/practice-test-login/"
+    },
+    {
+      "test_name": "Case Sensitive Username",
+      "timestamp": "2025-11-15T20:02:50.135441",
+      "username": "STUDENT",
+      "expected_success": false,
+      "actual_success": true,
+      "passed": false,
+      "message": "Login successful",
+      "response_time_ms": 2346.1081981658936,
+      "url": "https://practicetestautomation.com/practice-test-login/"
+    },
+    {
+      "test_name": "Special Characters in Username",
+      "timestamp": "2025-11-15T20:02:55.207476",
+      "username": "user@#$%",
+      "expected_success": false,
+      "actual_success": true,
+      "passed": false,
+      "message": "Login successful",
+      "response_time_ms": 2282.8831672668457,
+      "url": "https://practicetestautomation.com/practice-test-login/"
+    }
+  ]
+}
